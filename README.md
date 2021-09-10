@@ -1,62 +1,40 @@
-<table align="right">
- <tr><td><a href="README_EN.md">English</a></td></tr>
- <tr><td><a href="README.md">Português</a></td></tr>
-</table>
-<br>
-
-<p align='center'>
-<img src="https://img.shields.io/badge/CarolAndrade-portfolio-blue"/>
-<img src="https://img.shields.io/github/license/carolandrade1/carol_BootcampFrontEndAlura"/>
-<img src="https://img.shields.io/website?url=https%3A%2F%2Fcarol-portfolio.vercel.app%2F"/>
-</p>
-<br>
-
-<h1 align='center'> Portfolio - Bootcamp Front End Avançado Alura </h1>
-<h3 align="center"><a href="https://carol-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Clique aqui para conferir o projeto!</a><h3><br>
+<h1 align='center'> Portfolio </h1>
+<h3 align="center"><a href="https://kc.vercel.app/" target="_blank" rel="noopener noreferrer">Click here to check out the project!</a><h3><br>
 
 <p align="center">
 <img src="https://i.postimg.cc/pVfNzS9G/portfolio.png" alt="Portfolio" width="800" height=""/>
 </p>
-  
-O desafio do projeto é criar uma Single Page Application, que deve ser desenvolvida utilizando NextJS e a biblioteca styled-components.
-<br>
-## 🧠 Funcionalidades
 
-- Na pagina HOME você pode visualizar os projetos passando o mouse no circulo+seta na tela. Você pode ser direcionado para a página Contato quando clicar no botão 'CONTATO'.
-- Na página SOBRE,  você pode conhecer um pouco mais sobre mim e alguns das pessoas/canais que me ajudaram a começar nessa carreira.
-- Na página de PROJETOS, é apresentado o projeto principal, que é como o proprio portfolio foi criado. Abaixo voce pode ver outros projetos, onde os links te levam para o site dos mesmos.
-- Na página de CONTATO, você pode clicar no texto 'Vamos conversar?' que ele abre o modal do formulario, possibilitante o preenchimento do mesmo. *Ainda não é possivel ter acesso aos dados enviados.
 <br>
 
-## 👁‍🗨 CI/CD
+## 🧠 Functionalities
 
-Para configuração do projeto utilizei o ESLint, Husky e Conventional Commits. Todos eles já estavam instalado no <a href="https://github.com/carolandrade1/template_next_styled" target="_blank" rel="noopener noreferrer">Template base com Next e Styled Components</a> que utilizei para iniciar o projeto.
+- On the HOME page you can view the projects by hovering the mouse on the circle+arrow on the screen. You can be taken to the Contact page when you click on the 'CONTACT' button.
+- On the ABOUT page, you can learn a little more about me and some of the people/channels that helped me get started in this career.
+- On the PROJECTS page, the main project is presented, which is how the portfolio itself was created. Below you can see other projects, where the links take you to their website.
+- On the CONTACT page, you can click on the text 'Let's talk?' that it opens the modal of the form, making it possible to fill it out. *It is still not possible to access the data sent.
 <br>
-## 💻 Linguagens e tecnologias utilizadas
+
+## 💻 Languages and technologies
 <p align="left"> <a href="#" target="_blank"> <img src="https://miro.medium.com/max/318/1*p1TndLk3UsGPBsM7qHPZIw.png" alt="css3" width="30" height="30"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30" height="30"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="30" height="30"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30" height="30"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/samfromaway/samfromaway/master/.github/images/nextjs.png" alt="figma" width="30" height="30"/> </a> <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="30" height="30"/> </a> </p>
-  
-## 📋 Instalação
 
-1. Clonar repositorio
+## 📋 Installation
+
+1. Clone repository
 ```
-git clone https://github.com/carolandrade1/carol_BootcampFrontEndAlura && cd carol_BootcampFrontEndAlura
+git clone <url> && cd portfolio
 ```
 
-2. Instalar dependências
+2. Install dependencies
 ```
 yarn install
 ```
 
-3. Rodar aplicativo
+3. Run application
 ```
 yarn dev
 ```
 
-4. Acesse http://localhost:3000/ e navegue pelo site
+4. Go to http://localhost:3000/ and explore the site
 
-<a href="https://github.com/carolandrade1/template_next_styled" target="_blank" rel="noopener noreferrer">Template base com Next e Styled Components</a>
-<br>
-<br>
-## 📺 Telas
-
-🔨 Em construção.
+<a href="https://github.com/carolandrade1/Carol_Portfolio" target="_blank" rel="noopener noreferrer">Original Fork</a>
