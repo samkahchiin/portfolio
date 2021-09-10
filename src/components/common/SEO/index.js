@@ -3,22 +3,22 @@ import Head from 'next/head';
 import PropTypes from 'prop-types';
 
 function SEO({ headTitle }) {
-  const pageTitleDefault = 'Carol Andrade - Portfolio';
+  const pageTitleDefault = 'Sam Kah Chiin - Portfolio';
   const hasHeadTitle = Boolean(headTitle);
   const title = hasHeadTitle
     ? (`${headTitle} | ${pageTitleDefault}`)
     : (pageTitleDefault);
-  const url = 'https://carol-portfolio.vercel.app/';
+  const url = 'https://samkahchiin.vercel.app/';
   const image = 'https://i.postimg.cc/pVfNzS9G/portfolio.png';
-  const description = 'Confira meu Portfolio!';
+  const description = 'Sam Kah Chiin Portfolio';
 
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content="Portfolio" />
-      <meta name="author" content="Carol Andrade Santos" />
-      <meta name="keywords" content="Next.js, JAMStack, React, Portfolio" />
-      <meta httpEquiv="content-language" content="pt-br, en-US" />
+      <meta name="author" content="Sam Kah Chiin" />
+      <meta name="keywords" content="Ruby on Rails, Javascript, Next.js, React, Portfolio" />
+      <meta httpEquiv="content-language" content="en-US" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       {/* <meta httpEquiv="Content-Security-Policy" content="script-src 'self' https://carol-portfolio.vercel.app/;" /> */}
 

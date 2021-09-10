@@ -18,11 +18,17 @@ function Footer() {
       height="8vh"
       backgroundColor="#EFEFEF"
     >
-      <Text href="https://github.com/samkahchiin" zIndex="18" target="_blank" rel="noopener noreferrer" tag="a" variant="paragraph3" color="fonts.main" textAlign="center">
+      <Text zIndex="18" rel="noopener noreferrer" tag="a" variant="paragraph3" color="fonts.main" textAlign="center">
         ©
         {new Date().getFullYear()}
         {' '}
-        - Sam
+        <a href="https://github.com/samkahchiin" target="_blank" rel="noreferrer">
+          - Sam
+        </a>
+        {' & '}
+        <a href="https://github.com/carolandrade1" target="_blank" rel="noreferrer">
+          Carol
+        </a>
       </Text>
       <Box
         display={{
