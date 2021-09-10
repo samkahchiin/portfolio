@@ -1,6 +1,6 @@
 import React from 'react';
 import websitePageHOC from '../../src/components/wrappers/websitePage/hoc';
-import Projetos from '../../src/components/screens/projetos';
+import Projetos from '../../src/components/screens/projects';
 
 // eslint-disable-next-line react/prop-types
 function ProjetoScreen({ repositorios }) {

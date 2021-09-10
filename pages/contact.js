@@ -1,6 +1,6 @@
 import React from 'react';
 import websitePageHOC from '../src/components/wrappers/websitePage/hoc';
-import Contato from '../src/components/screens/contato';
+import Contato from '../src/components/screens/contact';
 
 function ContatoScreen() {
   return (

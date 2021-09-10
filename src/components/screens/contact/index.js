@@ -40,14 +40,14 @@ function Contato() {
       </Modal>
       <ContatoModal>
         <Button
-          title="Vamos conversar?"
+          title="Chat with me"
           ghost
           onClick={() => {
             setModalState(!isModalOpen); // novo state sendo atribuido
           }}
         >
           <Text tag="p" id="contato" variant="titleXS" color="fonts.main">
-            Vamos conversar?
+            Chat with me?
           </Text>
         </Button>
       </ContatoModal>
@@ -59,7 +59,7 @@ function Contato() {
           md: 'space-between',
         }}
       >
-        <Text tag="p" variant="paragraph3">Redes Sociais</Text>
+        <Text tag="p" variant="paragraph3">Social Profiles</Text>
         <RedesSociais>
           <Text
             tag="a"
