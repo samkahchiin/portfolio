@@ -19,13 +19,16 @@ const colors = {
     main: {
       color: '#000000',
     },
+    second: {
+      color: '#c1cbd7',
+    },
   },
   details: {
     main: {
-      color: '#9759CD',
+      color: '#8696a7',
     },
     second: {
-      color: '#B488DA',
+      color: '#c1cbd7',
     },
   },
 };
