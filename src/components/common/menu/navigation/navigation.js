@@ -6,19 +6,19 @@ import Text from '../../../foundation/text';
 
 const links = [
   {
-    texto: 'Home',
+    text: 'Home',
     url: '/',
   },
   {
-    texto: 'Experiences',
+    text: 'Experiences',
     url: '/sobre',
   },
   {
-    texto: 'Projects',
+    text: 'Projects',
     url: '/projects',
   },
   {
-    texto: 'Contact',
+    text: 'Contact',
     url: '/contact',
   },
 ];
@@ -29,7 +29,7 @@ function Navigation({ open, setOpen }) {
       {links.map((link) => (
         <Text tag="li" color="fonts.main" variant="paragraph3" className="li" key={link.url}>
           <Link href={link.url}>
-            {link.texto}
+            {link.text}
           </Link>
         </Text>
       ))}
