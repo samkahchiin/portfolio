@@ -56,10 +56,9 @@ function FormContent() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(userDTO),
         })
-          .then((res) => {
+          .then(() => {
             setSubmissionStatus(formStates.DONE);
             // eslint-disable-next-line no-console
-            console.log(res);
             setUserInfo(({
               name: '',
               email: '',

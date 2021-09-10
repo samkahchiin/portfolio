@@ -1,13 +1,12 @@
 async function sendEmail(req, res) {
   try {
-    let formBody = [];
-    const details = req.body;
-    for (const property in req.body) {
-      const encodedKey = encodeURIComponent(property);
-      const encodedValue = encodeURIComponent(details[property]);
-      formBody.push(`${encodedKey}=${encodedValue}`);
-    }
-    formBody = formBody.join('&');
+    const payload = req.body;
+
+    const formBody = Object.keys(payload).map((key) => {
+      const encodedKey = encodeURIComponent(key);
+      const encodedValue = encodeURIComponent(payload[key]);
+      return `${encodedKey}=${encodedValue}`;
+    }).join('&');
 
     await fetch(process.env.SEND_EMAIL_API, {
       method: 'POST',
