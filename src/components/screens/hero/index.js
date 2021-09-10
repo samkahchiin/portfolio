@@ -54,7 +54,9 @@ function Hero() {
           marginBottom="12px"
           color="fonts.main"
         >
-          A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with Ruby on Rails / JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.
+          A passionate Full Stack Software Developer 🚀 having an experience of building Web
+          applications with Ruby on Rails / JavaScript / Reactjs / Nodejs and some other cool
+          libraries and frameworks.
         </Text>
         <Link href="/contact" className="contato">
           <Text tag="span" variant="paragraph2" color="fonts.main">

@@ -83,7 +83,7 @@ function FormContent() {
         tag="p"
         marginBottom="32px"
       >
-        Please leave your message here and I'll get back to you soon.
+        Please leave your message here and I will get back to you soon.
       </Text>
 
       <div>
