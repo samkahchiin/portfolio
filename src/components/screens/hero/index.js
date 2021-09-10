@@ -36,7 +36,7 @@ function Hero() {
           marginBottom="12px"
           color="fonts.main"
         >
-          Olá, meu nome é
+          Hello my name is
         </Text>
         <Text
           tag="h1"
@@ -45,7 +45,7 @@ function Hero() {
           marginBottom="12px"
           color="fonts.main"
         >
-          Carol Andrade
+          Sam
         </Text>
         <Text
           tag="p"
@@ -54,12 +54,11 @@ function Hero() {
           marginBottom="12px"
           color="fonts.main"
         >
-          Desenvolvedora front-end, atualmente localizada em Belo Horizonte, Brasil.
-          Em busca da minha primeira oportunidade na area de desenvolvimento web.
+          A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with Ruby on Rails / JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.
         </Text>
-        <Link href="/contato" className="contato">
+        <Link href="/contact" className="contato">
           <Text tag="span" variant="paragraph2" color="fonts.main">
-            Contato
+            Contact
           </Text>
         </Link>
       </TextContainer>
