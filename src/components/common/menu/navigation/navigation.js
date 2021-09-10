@@ -10,16 +10,16 @@ const links = [
     url: '/',
   },
   {
-    texto: 'Sobre',
+    texto: 'Experiences',
     url: '/sobre',
   },
   {
-    texto: 'Projetos',
-    url: '/projetos',
+    texto: 'Projects',
+    url: '/projects',
   },
   {
-    texto: 'Contato',
-    url: '/contato',
+    texto: 'Contact',
+    url: '/contact',
   },
 ];
 
