@@ -18,7 +18,7 @@ function FormContent() {
   const [userInfo, setUserInfo] = React.useState({
     nome: '',
     email: '',
-    mensagem: '',
+    message: '',
   });
 
   const handleChange = useCallback(
@@ -34,7 +34,7 @@ function FormContent() {
 
   const isFormInvalid = userInfo.nome.length === 0
     || userInfo.email.length === 0
-    || userInfo.mensagem.length === 0;
+    || userInfo.message.length === 0;
 
   return (
     <form
@@ -46,7 +46,7 @@ function FormContent() {
         const userDTO = {
           name: userInfo.nome,
           email: userInfo.email,
-          message: userInfo.mensagem,
+          message: userInfo.message,
         };
 
         fetch('/api/sendgrid', {
@@ -61,7 +61,7 @@ function FormContent() {
             setUserInfo(({
               nome: '',
               email: '',
-              mensagem: '',
+              message: '',
             }));
           })
           .catch((error) => {
@@ -76,19 +76,19 @@ function FormContent() {
         tag="h1"
         color="fonts.main"
       >
-        Obrigada pela visita 😄
+        Thank you for your visit
       </Text>
       <Text
         variant="paragraph2"
         tag="p"
         marginBottom="32px"
       >
-        Deixe uma mensagem que entrarei em contato.
+        Please leave your message here and I'll get back to you soon.
       </Text>
 
       <div>
         <TextField
-          placeholder="nome"
+          placeholder="How should I address you?"
           name="nome"
           value={userInfo.nome}
           onChange={handleChange}
@@ -99,7 +99,7 @@ function FormContent() {
 
       <div>
         <TextField
-          placeholder="email@dominio.com"
+          placeholder="<your-email>"
           name="email"
           value={userInfo.email}
           onChange={handleChange}
@@ -110,11 +110,11 @@ function FormContent() {
 
       <div>
         <TextField
-          placeholder="mande sua mensagem"
-          name="mensagem"
-          value={userInfo.mensagem}
+          placeholder="Please leave your message here"
+          name="message"
+          value={userInfo.message}
           onChange={handleChange}
-          label="Mensagem"
+          label="Message"
           type="text"
           row="5"
         />
@@ -126,7 +126,7 @@ function FormContent() {
         disabled={isFormInvalid}
         fullWidth
       >
-        Enviar mensagem
+        Submit
       </Button>
 
       {isFormSubmited && submissionStatus === formStates.DONE && (

@@ -84,7 +84,7 @@ function Modal({ isOpen, onClose, children }) {
             top: '30px',
           }}
         >
-          Fechar
+          Close
         </Button>
       </motion.div>
     </ModalWrapper>
