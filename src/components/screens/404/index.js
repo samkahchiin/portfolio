@@ -26,11 +26,11 @@ function NotFound() {
     >
       <Erro>
         <Text tag="p" className="quatroZeroQuatro" color="fonts.main">404</Text>
-        <Text tag="p">Não entre em panico!</Text>
+        <Text tag="p">This page does not exists</Text>
       </Erro>
       <GoBack>
-        <Link href="/" className="voltar">Voltar ao inicio</Link>
-        <img src="/images/dontsee.webp" alt="Você não viu nada!" />
+        <Link href="/" className="voltar">Back to Home</Link>
+        <img src="/images/dontsee.webp" alt="You did not see anything" />
       </GoBack>
     </Box>
   );

@@ -6,6 +6,11 @@ import RedesSociais, { ContatoModal } from './style';
 import FormEmail from '../../forms/formEmail';
 import Modal from '../../common/modal/modal';
 
+// TODO: Move this to constant
+const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/kahchiin-sam/';
+const GITHUB_PROFILE = 'https://github.com/samkahchiin';
+const CODEPEN_PROFILE = 'https://codepen.io/earthworm48';
+
 function Contato() {
   const [isModalOpen, setModalState] = React.useState(false);
 
@@ -63,7 +68,7 @@ function Contato() {
         <RedesSociais>
           <Text
             tag="a"
-            href="https://www.linkedin.com/in/carolandrade1/"
+            href={LINKEDIN_PROFILE}
             variant="paragraph1XS"
             target="_blank"
             rel="noopener noreferrer"
@@ -74,7 +79,7 @@ function Contato() {
           </Text>
           <Text
             tag="a"
-            href="https://github.com/carolandrade1"
+            href={GITHUB_PROFILE}
             variant="paragraph1XS"
             target="_blank"
             rel="noopener noreferrer"
@@ -85,7 +90,7 @@ function Contato() {
           </Text>
           <Text
             tag="a"
-            href="https://codepen.io/carolandrade1"
+            href={CODEPEN_PROFILE}
             variant="paragraph1XS"
             target="_blank"
             rel="noopener noreferrer"
