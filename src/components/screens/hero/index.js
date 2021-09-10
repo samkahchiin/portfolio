@@ -69,7 +69,8 @@ function Hero() {
           {new Date().getFullYear() - START_YEAR}
           {' '}
           years of experience building Web
-          applications with Ruby on Rails / JavaScript / Nextjs / Reactjs / Nodejs / AWS / Terraform and some other cool
+          applications with Ruby on Rails / JavaScript / Nextjs / Reactjs
+          / Nodejs / AWS / Terraform and some other cool
           libraries and frameworks.
         </Text>
         <Link href="/contact" className="contato">
