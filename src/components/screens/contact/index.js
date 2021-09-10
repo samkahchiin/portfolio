@@ -56,6 +56,9 @@ function Contato() {
           </Text>
         </Button>
       </ContatoModal>
+      <Box>
+        <img src="/images/happy-me.png" alt="Sam Kah Chiin" />
+      </Box>
       <Box
         display="flex"
         flexDirection="column"
