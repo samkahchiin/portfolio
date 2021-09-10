@@ -23,7 +23,7 @@ function Footer() {
         {new Date().getFullYear()}
         {' '}
         <a href="https://github.com/samkahchiin" target="_blank" rel="noreferrer">
-          - Sam
+          - KC
         </a>
         {' & '}
         <a href="https://github.com/carolandrade1" target="_blank" rel="noreferrer">

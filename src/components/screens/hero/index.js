@@ -5,6 +5,9 @@ import CircleVideo from './animation/circleVideo';
 import TextContainer from './style';
 import Link from '../../common/link/link';
 
+// TODO: Make this constant
+const START_YEAR = 2016;
+
 function Hero() {
   return (
     <Box
@@ -29,6 +32,31 @@ function Hero() {
       }}
     >
       <TextContainer>
+        <Box display="flex" flexDirection="row">
+          <Box display="flex" flexDirection="column" justifyContent="center">
+            <Text
+              tag="p"
+              variant="paragraph3"
+              textAlign="left"
+              marginBottom="12px"
+              color="fonts.main"
+            >
+              Hello my name is
+            </Text>
+            <Text
+              tag="h1"
+              variant="titleXS"
+              textAlign="left"
+              marginBottom="12px"
+              color="fonts.main"
+            >
+              KC
+            </Text>
+          </Box>
+          <Box display={{ xs: 'none', md: 'block' }}>
+            <img src="/images/me-with-mac.png" alt="Sam Kah Chiin" />
+          </Box>
+        </Box>
         <Text
           tag="p"
           variant="paragraph3"
@@ -36,26 +64,12 @@ function Hero() {
           marginBottom="12px"
           color="fonts.main"
         >
-          Hello my name is
-        </Text>
-        <Text
-          tag="h1"
-          variant="titleXS"
-          textAlign="left"
-          marginBottom="12px"
-          color="fonts.main"
-        >
-          Sam
-        </Text>
-        <Text
-          tag="p"
-          variant="paragraph3"
-          textAlign="left"
-          marginBottom="12px"
-          color="fonts.main"
-        >
-          A passionate Full Stack Software Developer 🚀 having an experience of building Web
-          applications with Ruby on Rails / JavaScript / Reactjs / Nodejs and some other cool
+          A passionate AWS and terraform certified Full Stack Software Developer 🚀 having almost
+          {' '}
+          {new Date().getFullYear() - START_YEAR}
+          {' '}
+          years of experience building Web
+          applications with Ruby on Rails / JavaScript / Nextjs / Reactjs / Nodejs / AWS / Terraform and some other cool
           libraries and frameworks.
         </Text>
         <Link href="/contact" className="contato">
