@@ -1,16 +1,18 @@
-import sendgrid from '@sendgrid/mail';
-
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
-
 async function sendEmail(req, res) {
   try {
-    // console.log("REQ.BODY", req.body);
-    await sendgrid.send({
-      to: 'canovember01@gmail.com', // Your email where you'll receive emails
-      from: 'canovember01@gmail.com', // your website email address here
-      subject: `email de: ${req.body.name}`,
-      text: `🙋/🙋‍♂️Nome: ${req.body.name}\n ✉️Email: ${req.body.email}\n 📝Mensagem: ${req.body.message}`
-      ,
+    let formBody = [];
+    const details = req.body;
+    for (const property in req.body) {
+      const encodedKey = encodeURIComponent(property);
+      const encodedValue = encodeURIComponent(details[property]);
+      formBody.push(`${encodedKey}=${encodedValue}`);
+    }
+    formBody = formBody.join('&');
+
+    await fetch(process.env.SEND_EMAIL_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: formBody,
     });
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message });

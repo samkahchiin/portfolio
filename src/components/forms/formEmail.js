@@ -16,7 +16,7 @@ function FormContent() {
   const [isFormSubmited, setIsFormSubmited] = React.useState(false);
   const [submissionStatus, setSubmissionStatus] = React.useState(formStates.DEFAULT);
   const [userInfo, setUserInfo] = React.useState({
-    nome: '',
+    name: '',
     email: '',
     message: '',
   });
@@ -32,19 +32,21 @@ function FormContent() {
     [userInfo],
   );
 
-  const isFormInvalid = userInfo.nome.length === 0
+  const isFormInvalid = userInfo.name.length === 0
     || userInfo.email.length === 0
     || userInfo.message.length === 0;
 
   return (
     <form
+      className="gform"
+      method="post"
       onSubmit={(event) => {
         event.preventDefault();
         setIsFormSubmited(true);
 
         // Data Transfer Object
         const userDTO = {
-          name: userInfo.nome,
+          name: userInfo.name,
           email: userInfo.email,
           message: userInfo.message,
         };
@@ -54,12 +56,12 @@ function FormContent() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(userDTO),
         })
-          .then((resposta) => {
+          .then((res) => {
             setSubmissionStatus(formStates.DONE);
             // eslint-disable-next-line no-console
-            console.log(resposta);
+            console.log(res);
             setUserInfo(({
-              nome: '',
+              name: '',
               email: '',
               message: '',
             }));
@@ -89,10 +91,10 @@ function FormContent() {
       <div>
         <TextField
           placeholder="How should I address you?"
-          name="nome"
-          value={userInfo.nome}
+          name="name"
+          value={userInfo.name}
           onChange={handleChange}
-          label="Nome"
+          label="Name"
           type="text"
         />
       </div>
