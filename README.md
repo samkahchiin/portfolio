@@ -37,4 +37,6 @@ yarn dev
 
 4. Go to http://localhost:3000/ and explore the site
 
-<a href="https://github.com/carolandrade1/Carol_Portfolio" target="_blank" rel="noopener noreferrer">Original Fork</a>
+### Reference
+- [Original Fork]("https://github.com/carolandrade1/Carol_Portfolio")
+- [Setup Contact form using google app scripts](https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server)
