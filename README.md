@@ -1,8 +1,3 @@
-<table align="right">
- <tr><td><a href="README_EN.md">English</a></td></tr>
-</table>
-<br>
-
 <h1 align='center'> Portfolio </h1>
 <h3 align="center"><a href="https://kc.vercel.app/" target="_blank" rel="noopener noreferrer">Click here to check out the project!</a><h3><br>
 
@@ -42,9 +37,4 @@ yarn dev
 
 4. Go to http://localhost:3000/ and explore the site
 
-<a href="https://github.com/carolandrade1/template_next_styled" target="_blank" rel="noopener noreferrer">Template with Next e Styled Components</a>
-<br>
-<br>
-
-### Fork from
-Carol Portfolio
+<a href="https://github.com/carolandrade1/Carol_Portfolio" target="_blank" rel="noopener noreferrer">Original Fork</a>
