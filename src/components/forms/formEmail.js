@@ -51,7 +51,7 @@ function FormContent() {
           message: userInfo.message,
         };
 
-        fetch('/api/sendgrid', {
+        fetch('/api/sendmail', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(userDTO),
