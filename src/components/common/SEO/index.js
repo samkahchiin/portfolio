@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+import { seo } from '../../../data/websiteData';
 
 function SEO({ headTitle }) {
   const pageTitleDefault = 'Sam Kah Chiin - Portfolio';
@@ -8,10 +9,9 @@ function SEO({ headTitle }) {
   const title = hasHeadTitle
     ? (`${headTitle} | ${pageTitleDefault}`)
     : (pageTitleDefault);
-  // TODO: Move all data together
-  const url = 'https://samkahchiin.vercel.app/';
-  const image = 'https://i.postimg.cc/WzNdbxJk/portfolio-index.png';
-  const description = 'Sam Kah Chiin Portfolio';
+  const url = seo.portfolioUrl;
+  const image = seo.portfolioScreenshot;
+  const { description } = seo;
 
   return (
     <Head>

@@ -3,6 +3,12 @@ const GITHUB_USERNAME = 'samkahchiin';
 const REPOSITORY_IDS = [254988213, 328071690];
 const PRINCIPAL_REPOSITORY_ID = [405060156];
 
+const seo = {
+  portfolioScreenshot: 'https://i.postimg.cc/WzNdbxJk/portfolio-index.png',
+  portfolioUrl: 'https://samkahchiin.vercel.app',
+  description: 'Sam Kah Chiin Portfolio',
+};
+
 const skillsSection = {
   title: 'About Me',
   subTitle: 'Former Chemical Engineering Student who founds passion in Software Development.',
@@ -108,4 +114,5 @@ export {
   REPOSITORY_IDS,
   PRINCIPAL_REPOSITORY_ID,
   skillsSection,
+  seo,
 };
