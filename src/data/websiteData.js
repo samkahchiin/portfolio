@@ -3,6 +3,10 @@ const GITHUB_USERNAME = 'samkahchiin';
 const REPOSITORY_IDS = [254988213, 328071690];
 const PRINCIPAL_REPOSITORY_ID = [405060156];
 
+const landingPage = {
+  imageLink: '/images/me-with-mac.webp',
+};
+
 const seo = {
   siteOwner: 'Sam Kah Chiin',
   siteTitle: 'Sam Kah Chiin Portfolio',
@@ -18,6 +22,8 @@ const skillsSection = {
     '⚡ Develop highly interactive Front end / User Interfaces for your web applications',
     '⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks',
     '⚡ AWS and Terraform Certified'],
+
+  profileImageLink: '/images/profile.webp',
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -140,7 +146,7 @@ const achievementSection = {
       ],
     },
     {
-      title: "Trinity's Performance Diploma (ATCL)",
+      title: "Piano - Trinity's Performance Diploma (ATCL)",
       subtitle:
         'Performance Diplomas that is equivalent in standard to the first year recital of an undergraduate degree',
       imageLink: '/images/trinity.webp',
@@ -163,13 +169,23 @@ const achievementSection = {
         },
       ],
     },
+    {
+      title: 'Essentials of the Satir Growth Model for Personal Growth (Advance Level)',
+      subtitle: `
+        Satir Growth Model concepts course designed by Dr. Yung Tsang Sun May.
+        Satir Growth Model is the model developer by Virginia Satir who is known as the
+        "mother of family therapy" or pioneer of family therapy.
+        `,
+      imageLink: '/images/satir.webp',
+      footer: [],
+    },
 
   ],
 };
 
 const contactSection = {
   title: "Let's Chat?",
-  imageLink: '/images/happy-me.png',
+  imageLink: '/images/happy-me.webp',
   linkedinUrl: 'https://www.linkedin.com/in/kahchiin-sam/',
   githubUrl: 'https://github.com/samkahchiin',
   codepenUrl: 'https://codepen.io/earthworm48',
@@ -183,4 +199,5 @@ export {
   achievementSection,
   contactSection,
   seo,
+  landingPage,
 };

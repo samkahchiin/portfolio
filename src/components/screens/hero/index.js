@@ -4,6 +4,7 @@ import Text from '../../foundation/text';
 import CircleVideo from './animation/circleVideo';
 import TextContainer from './style';
 import Link from '../../common/link/link';
+import { landingPage, seo } from '../../../data/websiteData';
 
 // TODO: Make this constant
 const START_YEAR = 2016;
@@ -54,7 +55,7 @@ function Hero() {
             </Text>
           </Box>
           <Box display={{ xs: 'none', md: 'block' }}>
-            <img src="/images/me-with-mac.png" alt="Sam Kah Chiin" />
+            <img src={landingPage.imageLink} alt={seo.siteOwner} />
           </Box>
         </Box>
         <Text

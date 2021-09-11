@@ -1,5 +1,5 @@
 import React from 'react';
-import { skillsSection } from '../../../data/websiteData';
+import { seo, skillsSection } from '../../../data/websiteData';
 import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import Achievement from './achievement';
@@ -66,7 +66,7 @@ function AboutMe() {
           </Info>
           <Image>
             <figure>
-              <img src="/images/profile.png" alt="Sam Kah Chiin" />
+              <img src={skillsSection.profileImageLink} alt={seo.siteOwner} />
               <figcaption style={{ textAlign: 'center', fontWeight: '100' }}>
                 <i>&quot;No bug please ~&quot;</i>
               </figcaption>
