@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMe from '../../src/components/screens/sobre';
+import AboutMe from '../../src/components/screens/aboutMe';
 import websitePageHOC from '../../src/components/wrappers/websitePage/hoc';
 
 function AboutMeScreen() {
