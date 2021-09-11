@@ -1,11 +1,12 @@
 import React from 'react';
 import websitePageHOC from '../../src/components/wrappers/websitePage/hoc';
-import Projetos from '../../src/components/screens/projects';
+import Project from '../../src/components/screens/projects';
+import { GITHUB_USERNAME } from '../../src/data/websiteData';
 
 // eslint-disable-next-line react/prop-types
 function ProjetoScreen({ repositorios }) {
   return (
-    <Projetos repositorios={repositorios} />
+    <Project repositorios={repositorios} />
   );
 }
 
@@ -14,14 +15,14 @@ ProjetoScreen.defaultProps = {};
 export default websitePageHOC(ProjetoScreen, {
   pageWrapperProps: {
     seoProps: {
-      headTitle: 'Projetos',
+      headTitle: 'Projects',
     },
   },
 });
 
 export async function getStaticProps() {
-  const repositorios = await fetch('https://api.github.com/users/carolandrade1/repos')
-    .then((respostaDoServer) => respostaDoServer.json());
+  const repositorios = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
+    .then((res) => res.json());
   return {
     props: {
       repositorios,

@@ -11,7 +11,7 @@ function CaseStudy() {
 export default websitePageHOC(CaseStudy, {
   pageWrapperProps: {
     seoProps: {
-      headTitle: 'Case Portfolio',
+      headTitle: 'Portfolio',
     },
   },
 });

@@ -11,7 +11,7 @@ function SobreScreen() {
 export default websitePageHOC(SobreScreen, {
   pageWrapperProps: {
     seoProps: {
-      headTitle: 'Sobre',
+      headTitle: 'About Me',
     },
   },
 });

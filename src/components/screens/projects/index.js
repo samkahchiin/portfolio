@@ -5,14 +5,12 @@ import Text from '../../foundation/text';
 import Link from '../../common/link/link';
 import ArrowCircle from './animation/arrowCircle';
 import ListaProjetos, { ProjetoPrincipal } from './style';
-
-const repositoriosId = [390006089, 370833957, 371118356, 380740837, 385367528, 396137846];
-const repositorioIdPrincipal = [397245461];
+import { GITHUB_USERNAME, PRINCIPAL_REPOSITORY_ID, REPOSITORY_IDS } from '../../../data/websiteData';
 
 // eslint-disable-next-line no-unused-vars
-function Projetos({ repositorios }) {
-  const repos = repositorios.filter((repo) => repositoriosId.includes(repo.id));
-  const reposPrincipal = repositorios.filter((repo) => repositorioIdPrincipal.includes(repo.id));
+function Project({ repositorios }) {
+  const repos = repositorios.filter((repo) => REPOSITORY_IDS.includes(repo.id));
+  const reposPrincipal = repositorios.filter((repo) => PRINCIPAL_REPOSITORY_ID.includes(repo.id));
   return (
     <Box
       display="flex"
@@ -70,7 +68,7 @@ function Projetos({ repositorios }) {
           }}
         >
           <Text tag="h1" variant="titleXS" color="fonts.main" marginBottom="50px" textAlign="left">
-            Projetos Selecionados
+            Open Source Projects
           </Text>
           <ArrowCircle />
         </Box>
@@ -236,15 +234,15 @@ function Projetos({ repositorios }) {
           tag="a"
           variant="paragraph1XS"
           color="fonts.main"
-          href="https://github.com/carolandrade1?tab=repositories"
+          href={`https://github.com/${GITHUB_USERNAME}?tab=repositories`}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Veja outros projetos
+          See More ...
         </Text>
       </Box>
     </Box>
   );
 }
 
-export default Projetos;
+export default Project;
