@@ -10,7 +10,7 @@ import { GITHUB_USERNAME, PRINCIPAL_REPOSITORY_ID, REPOSITORY_IDS } from '../../
 // eslint-disable-next-line no-unused-vars
 function Project({ repositorios }) {
   const repos = repositorios.filter((repo) => REPOSITORY_IDS.includes(repo.id));
-  const reposPrincipal = repositorios.filter((repo) => PRINCIPAL_REPOSITORY_ID.includes(repo.id));
+  const principalRepo = repositorios.filter((repo) => PRINCIPAL_REPOSITORY_ID.includes(repo.id));
   return (
     <Box
       display="flex"
@@ -76,10 +76,10 @@ function Project({ repositorios }) {
           flexBasis="95%"
         >
           <ProjetoPrincipal>
-            {reposPrincipal.map((item) => (
+            {principalRepo.map((item) => (
               <li key={item.id}>
                 <Link
-                  href="/casePortfolio"
+                  href={item.html_url}
                   title="Case Portfolio"
                 >
                   <Box
@@ -88,7 +88,7 @@ function Project({ repositorios }) {
                     className="ProjetoPrincipal"
                   >
                     <img
-                      src="/images/LPportfolio.webp"
+                      src="/images/portfolio.webp"
                       alt={item.name}
                       loading="lazy"
                     />
