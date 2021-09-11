@@ -10,9 +10,9 @@
 ## 🧠 Functionalities
 
 - On the HOME page you can view the projects by hovering the mouse on the circle+arrow on the screen. You can be taken to the Contact page when you click on the 'CONTACT' button.
-- On the ABOUT page, you can learn a little more about me and some of the people/channels that helped me get started in this career.
-- On the PROJECTS page, the main project is presented, which is how the portfolio itself was created. Below you can see other projects, where the links take you to their website.
-- On the CONTACT page, you can click on the text 'Let's talk?' that it opens the modal of the form, making it possible to fill it out. *It is still not possible to access the data sent.
+- On the ABOUT page, you can learn a little more about me, my experiences
+- On the PROJECTS page, you can find the open source projects I have done.
+- On the CONTACT page, you can click on the text 'Let's Chat?' that it opens the modal of the form, making it possible to fill it out. *It is still not possible to access the data sent.
 <br>
 
 ## 💻 Languages and technologies
