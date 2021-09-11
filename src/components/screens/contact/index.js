@@ -19,14 +19,9 @@ function Contato() {
           xs: 'space-around',
           md: 'space-around',
         }}
-        height="70vh"
         padding={{
           xs: '0px',
-          md: '40px',
-        }}
-        marginTop={{
-          xs: '50px',
-          md: '100px',
+          md: '20px',
         }}
         textAlign="center"
       >

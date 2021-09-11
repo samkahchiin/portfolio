@@ -16,10 +16,9 @@ function Hero() {
           xs: 'column',
           md: 'row',
         }}
-        height="75vh"
         padding={{
           xs: '0px',
-          md: '40px',
+          md: '15px',
         }}
         paddingLeft={{
           xs: '20px',
