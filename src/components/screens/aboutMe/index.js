@@ -36,7 +36,7 @@ function AboutMe() {
               {skillsSection.subTitle}
               <ul>
                 {skillsSection.skills.map((skill) => (
-                  <li>{skill}</li>
+                  <li style={{ textAlign: 'left' }}>{skill}</li>
                 ))}
               </ul>
             </Text>
