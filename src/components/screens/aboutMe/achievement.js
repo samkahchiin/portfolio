@@ -4,7 +4,7 @@ import { achievementSection } from '../../../data/websiteData';
 import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import {
-  Card, CardDetailsDiv, CardFooter, CardImageDiv, CardSubtitle, CardTitle, Carousel, CardTag,
+  Card, CardDetailsDiv, CardFooter, CardImageDiv, CardSubtitle, CardTitle, Carousel, CardTag, Subtitle,
 } from './style/achievement';
 
 const Achievement = () => {
@@ -17,6 +17,9 @@ const Achievement = () => {
   return (
     <section>
       <Text tag="h3" variant="subTitleXS">{achievementSection.title}</Text>
+      <Subtitle>
+        {achievementSection.subtitle}
+      </Subtitle>
 
       <Carousel>
         {achievementSection.cards.map((card) => (
@@ -37,13 +40,13 @@ const Achievement = () => {
             <CardFooter>
               {card.footer.map((v, idx) => (
                 <CardTag
+                  key={v.name}
                   buttonColor={themeContext.colors.details.second.color}
                   hoverBackground={themeContext.colors.details.main.color}
                 >
                   <span
                     role="link"
                     tabIndex={idx}
-                    key={v.name}
                     onClick={() => openUrlInNewTab(v.url)}
                     onKeyDown={() => openUrlInNewTab(v.url)}
                   >

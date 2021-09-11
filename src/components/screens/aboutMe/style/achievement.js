@@ -1,6 +1,13 @@
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 
+export const Subtitle = styled.div`
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 100;
+  font-size: 1.5rem;
+`;
+
 export const Card = styled.div`
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;

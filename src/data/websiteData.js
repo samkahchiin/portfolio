@@ -112,7 +112,7 @@ https://fontawesome.com/icons?d=gallery */
 const achievementSection = {
   title: 'Achievement & Certifications 🏆 ',
   subtitle:
-    'Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !',
+    'Achievements, Certifications, Awards and Some Cool Stuff that I have done !',
   cards: [
     {
       title: 'AWS Certified Solutions Architect Associate',
