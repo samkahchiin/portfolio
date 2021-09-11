@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { seo } from '../../../data/websiteData';
 
 function SEO({ headTitle }) {
-  const pageTitleDefault = 'Sam Kah Chiin - Portfolio';
+  const pageTitleDefault = seo.siteTitle;
   const hasHeadTitle = Boolean(headTitle);
   const title = hasHeadTitle
     ? (`${headTitle} | ${pageTitleDefault}`)

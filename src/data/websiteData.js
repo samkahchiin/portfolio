@@ -5,6 +5,7 @@ const PRINCIPAL_REPOSITORY_ID = [405060156];
 
 const seo = {
   siteOwner: 'Sam Kah Chiin',
+  siteTitle: 'Sam Kah Chiin Portfolio',
   portfolioScreenshot: 'https://i.postimg.cc/WzNdbxJk/portfolio-index.png',
   portfolioUrl: 'https://samkahchiin.vercel.app',
   description: 'Sam Kah Chiin Portfolio',
