@@ -17,8 +17,7 @@ const skillsSection = {
   skills: [
     '⚡ Develop highly interactive Front end / User Interfaces for your web applications',
     '⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks',
-    '⚡ AWS and Terraform Certified',
-  ],
+    '⚡ AWS and Terraform Certified'],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -140,6 +139,31 @@ const achievementSection = {
         },
       ],
     },
+    {
+      title: "Trinity's Performance Diploma (ATCL)",
+      subtitle:
+        'Performance Diplomas that is equivalent in standard to the first year recital of an undergraduate degree',
+      imageLink: '/images/trinity.webp',
+      footer: [
+        {
+          name: 'Certification',
+          url: 'https://drive.google.com/file/d/1Fog2VmNg9XTHbjfyGL40lDK9Bfas0bD2/view?usp=sharing',
+        },
+      ],
+    },
+    {
+      title: "Vice-Chancellor's Award",
+      subtitle:
+        'Best Undergraduate Student of the year in Faculty of Chemical Engineering',
+      imageLink: '/images/utm-logo.webp',
+      footer: [
+        {
+          name: 'Certification',
+          url: 'https://drive.google.com/file/d/1i-Ir7I3ScyslMe6Dh0bPBOTrIVJ1ly__/view?usp=sharing',
+        },
+      ],
+    },
+
   ],
 };
 
