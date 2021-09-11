@@ -4,7 +4,9 @@ import { achievementSection } from '../../../data/websiteData';
 import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import {
-  Card, CardDetailsDiv, CardFooter, CardImageDiv, CardSubtitle, CardTitle, Carousel, CardTag, Subtitle,
+  Card, CardDetailsDiv, CardFooter,
+  CardImageDiv, CardSubtitle,
+  CardTitle, Carousel, CardTag, Subtitle,
 } from './style/achievement';
 
 const Achievement = () => {
