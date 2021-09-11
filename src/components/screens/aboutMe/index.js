@@ -1,5 +1,6 @@
 import React from 'react';
 import { seo, skillsSection } from '../../../data/websiteData';
+import Button from '../../common/button/button';
 import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import Achievement from './achievement';
@@ -71,6 +72,9 @@ function AboutMe() {
                 <i>&quot;No bug please ~&quot;</i>
               </figcaption>
             </figure>
+            <Box style={{ textAlign: 'center', marginTop: '1.5rem' }}>
+              <Button target="_blank" href={skillsSection.resumeLink}>Download My Resume</Button>
+            </Box>
           </Image>
         </Box>
       </section>

@@ -24,6 +24,7 @@ const skillsSection = {
     '⚡ AWS and Terraform Certified'],
 
   profileImageLink: '/images/profile.webp',
+  resumeLink: 'https://docs.google.com/document/d/1PgyewigyTl4gYADQUGhlv2mtmMuE9pc7Xpm4akzowmE/edit?usp=sharing',
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -124,7 +125,7 @@ const achievementSection = {
     {
       title: 'AWS Certified Solutions Architect Associate',
       subtitle:
-      'Validates the ability to design and implement distributed systems on AWS',
+      'Able to design and implement distributed systems on AWS',
       imageLink: '/images/aws-logo.webp',
       footer: [
         {

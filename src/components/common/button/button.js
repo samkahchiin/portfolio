@@ -13,8 +13,10 @@ const ButtonGhost = css`
 `;
 
 const ButtonDefault = css`
-    color: ${({ theme }) => theme.colors.fonts.main.color};
-    background-color: ${({ theme }) => theme.colors.background.main.color};
+    font-weight: 100;
+    color: black;
+    background-color: ${({ theme }) => theme.colors.button.second.color};
+    border-radius: 0.3rem;
 `;
 
 const ButtonWrapper = styled.button`

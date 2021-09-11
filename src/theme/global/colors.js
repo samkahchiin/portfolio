@@ -31,6 +31,14 @@ const colors = {
       color: '#c1cbd7',
     },
   },
+  button: {
+    main: {
+      color: '#8696a7',
+    },
+    second: {
+      color: '#c1cbd7',
+    },
+  },
 };
 
 export default colors;
