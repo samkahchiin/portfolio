@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
+import Flickity from 'react-flickity-component';
 import { achievementSection } from '../../../data/websiteData';
-import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import {
   Card, CardDetailsDiv, CardFooter,
   CardImageDiv, CardSubtitle,
-  CardTitle, Carousel, CardTag, Subtitle,
+  CardTitle, CardTag, Subtitle,
 } from './style/achievement';
+import 'flickity/css/flickity.css';
 
 const Achievement = () => {
   const themeContext = useContext(ThemeContext);
@@ -23,22 +24,20 @@ const Achievement = () => {
         {achievementSection.subtitle}
       </Subtitle>
 
-      <Carousel>
+      <Flickity options={{ initialIndex: 1, wrapAround: false }}>
         {achievementSection.cards.map((card) => (
           <Card key={card.title}>
-            <Box>
-              <CardImageDiv>
-                <img src={card.imageLink} alt={card.title} />
-              </CardImageDiv>
-              <CardDetailsDiv>
-                <CardTitle>
-                  {card.title}
-                </CardTitle>
-                <CardSubtitle>
-                  {card.subtitle}
-                </CardSubtitle>
-              </CardDetailsDiv>
-            </Box>
+            <CardImageDiv>
+              <img src={card.imageLink} alt={card.title} />
+            </CardImageDiv>
+            <CardDetailsDiv>
+              <CardTitle>
+                {card.title}
+              </CardTitle>
+              <CardSubtitle>
+                {card.subtitle}
+              </CardSubtitle>
+            </CardDetailsDiv>
             <CardFooter>
               {card.footer.map((v, idx) => (
                 <CardTag
@@ -60,8 +59,7 @@ const Achievement = () => {
 
           </Card>
         ))}
-      </Carousel>
-
+      </Flickity>
     </section>
   );
 };

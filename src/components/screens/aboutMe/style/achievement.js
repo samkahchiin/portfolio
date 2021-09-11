@@ -17,12 +17,13 @@ export const Card = styled.div`
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-`;
 
-export const Carousel = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 24rem;
+  margin-right: 1rem;
 `;
 
 export const CardImageDiv = styled.div`
