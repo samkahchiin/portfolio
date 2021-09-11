@@ -10,8 +10,8 @@ const links = [
     url: '/',
   },
   {
-    text: 'Experiences',
-    url: '/sobre',
+    text: 'About',
+    url: '/about',
   },
   {
     text: 'Projects',

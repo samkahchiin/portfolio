@@ -4,7 +4,7 @@ import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import { Descricao, Image, Info } from './style';
 
-function Sobre() {
+function AboutMe() {
   return (
     <Box
       display="flex"
@@ -75,4 +75,4 @@ function Sobre() {
   );
 }
 
-export default Sobre;
+export default AboutMe;

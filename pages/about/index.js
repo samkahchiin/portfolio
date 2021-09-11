@@ -1,14 +1,14 @@
 import React from 'react';
-import Sobre from '../../src/components/screens/sobre';
+import AboutMe from '../../src/components/screens/sobre';
 import websitePageHOC from '../../src/components/wrappers/websitePage/hoc';
 
-function SobreScreen() {
+function AboutMeScreen() {
   return (
-    <Sobre />
+    <AboutMe />
   );
 }
 
-export default websitePageHOC(SobreScreen, {
+export default websitePageHOC(AboutMeScreen, {
   pageWrapperProps: {
     seoProps: {
       headTitle: 'About Me',
@@ -16,4 +16,4 @@ export default websitePageHOC(SobreScreen, {
   },
 });
 
-SobreScreen.defaultProps = {};
+AboutMeScreen.defaultProps = {};
