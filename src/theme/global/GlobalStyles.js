@@ -1,5 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import breakpointsMedia from '../util/breakpoints';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -23,8 +24,19 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    height: 100vh;
-    max-width: 100vw;
+    min-height: 100vh; max-width: 100vw;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px;
+    border-color: ${({ theme }) => theme.colors.background.second.color};
+
+   ${breakpointsMedia({
+    md: css`
+        margin-bottom: none;
+        padding-bottom: 0;
+        border-bottom: 0;
+      `,
+  })}
   }
 
   ul {
