@@ -66,7 +66,7 @@ function AboutMe() {
           <figure>
             <img src="/images/profile.png" alt="Sam Kah Chiin" />
             <figcaption style={{ textAlign: 'center', fontWeight: '100' }}>
-              <i>&apos;No bug please~&apos;</i>
+              <i>&quot;No bug please ~&quot;</i>
             </figcaption>
           </figure>
         </Image>
