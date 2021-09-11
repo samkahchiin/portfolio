@@ -103,7 +103,12 @@ function Sobre() {
           </Canais>
         </Info>
         <Image>
-          <img src="https://avatars.githubusercontent.com/u/65976843?v=4" alt="" />
+          <figure>
+            <img src="/images/profile.png" alt="Sam Kah Chiin" />
+            <figcaption style={{ textAlign: 'center', fontWeight: '100' }}>
+              <i>&apos;No bug please~&apos;</i>
+            </figcaption>
+          </figure>
         </Image>
       </Box>
     </Box>

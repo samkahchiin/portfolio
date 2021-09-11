@@ -8,7 +8,7 @@ export const Info = styled.div`
   ${breakpointsMedia({
     md: css`
       order: 1;
-      padding-right: 30px; 
+      padding-right: 30px;
     `,
   })}
 `;
@@ -49,7 +49,7 @@ const Canais = styled.ul`
       gap: 25px;
   `,
   })}
-  
+
   a {
     position: relative;
   }
@@ -88,6 +88,7 @@ export const Image = styled.div`
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    border: solid 0.3rem #c1cbd8;
 
     ${breakpointsMedia({
     md: css`
