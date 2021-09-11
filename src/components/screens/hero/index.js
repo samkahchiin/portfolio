@@ -6,9 +6,6 @@ import TextContainer from './style';
 import Link from '../../common/link/link';
 import { landingPage, seo } from '../../../data/websiteData';
 
-// TODO: Make this constant
-const START_YEAR = 2016;
-
 function Hero() {
   return (
     <Box
@@ -65,14 +62,7 @@ function Hero() {
           marginBottom="12px"
           color="fonts.main"
         >
-          A passionate AWS and terraform certified Full Stack Software Developer 🚀 having almost
-          {' '}
-          {new Date().getFullYear() - START_YEAR}
-          {' '}
-          years of experience building Web
-          applications with Ruby on Rails / JavaScript / Nextjs / Reactjs
-          / Nodejs / AWS / Terraform and some other cool
-          libraries and frameworks.
+          {landingPage.description}
         </Text>
         <Link href="/contact" className="contato">
           <Text tag="span" variant="paragraph2" color="fonts.main">

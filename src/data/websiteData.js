@@ -3,7 +3,16 @@ const GITHUB_USERNAME = 'samkahchiin';
 const REPOSITORY_IDS = [254988213, 328071690];
 const PRINCIPAL_REPOSITORY_ID = [405060156];
 
+const START_YEAR = 2016;
+
 const landingPage = {
+  description: `
+    A passionate AWS and Terraform-certified Full Stack Software Developer 🚀 having almost
+     ${new Date().getFullYear() - START_YEAR} years of experience building Web
+    applications with Ruby on Rails / JavaScript / Nextjs / Reactjs
+    / Nodejs / AWS / Terraform and some other cool
+    libraries and frameworks.
+  `,
   imageLink: '/images/me-with-mac.webp',
 };
 
@@ -76,6 +85,7 @@ https://fontawesome.com/icons?d=gallery */
       {
         skillName: 'Postgresql',
         fontAwesomeClassname: 'fas fa-database',
+        imageLink: '/images/psql.svg',
       },
       {
         skillName: 'python',
@@ -171,16 +181,29 @@ const achievementSection = {
       ],
     },
     {
+      title: 'Japanese-Language Proficiency Test - N2',
+      subtitle: `
+        N2 is the second hardest level and candidate who has passed it demonstrate
+        the ability to understand Japanese used in everyday situations,
+        and in a variety of circumstances to a certain degree.`,
+      imageLink: '/images/n2.webp',
+      footer: [
+        {
+          name: 'Certification',
+          url: 'https://drive.google.com/file/d/1LFzkeR8zhqQGD_0IC6ec6sgfGeoZSWi4/view?usp=sharing',
+        },
+      ],
+    },
+    {
       title: 'Essentials of the Satir Growth Model for Personal Growth (Advance Level)',
       subtitle: `
         Satir Growth Model concepts course designed by Dr. Yung Tsang Sun May.
-        Satir Growth Model is the model developer by Virginia Satir who is known as the
+        Satir Growth Model is the model developed by Virginia Satir who is known as the
         "mother of family therapy" or pioneer of family therapy.
         `,
       imageLink: '/images/satir.webp',
       footer: [],
     },
-
   ],
 };
 

@@ -69,7 +69,7 @@ function AboutMe() {
             <figure>
               <img src={skillsSection.profileImageLink} alt={seo.siteOwner} />
               <figcaption style={{ textAlign: 'center', fontWeight: '100' }}>
-                <i>&quot;No bug please ~&quot;</i>
+                <i>Me: Pray for no bug</i>
               </figcaption>
             </figure>
             <Box style={{ textAlign: 'center', marginTop: '1.5rem' }}>
