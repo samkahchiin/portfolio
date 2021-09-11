@@ -4,6 +4,7 @@ const REPOSITORY_IDS = [254988213, 328071690];
 const PRINCIPAL_REPOSITORY_ID = [405060156];
 
 const seo = {
+  siteOwner: 'Sam Kah Chiin',
   portfolioScreenshot: 'https://i.postimg.cc/WzNdbxJk/portfolio-index.png',
   portfolioUrl: 'https://samkahchiin.vercel.app',
   description: 'Sam Kah Chiin Portfolio',
@@ -141,11 +142,20 @@ const achievementSection = {
   ],
 };
 
+const contactSection = {
+  title: "Let's Chat?",
+  imageLink: '/images/happy-me.png',
+  linkedinUrl: 'https://www.linkedin.com/in/kahchiin-sam/',
+  githubUrl: 'https://github.com/samkahchiin',
+  codepenUrl: 'https://codepen.io/earthworm48',
+};
+
 export {
   GITHUB_USERNAME,
   REPOSITORY_IDS,
   PRINCIPAL_REPOSITORY_ID,
   skillsSection,
   achievementSection,
+  contactSection,
   seo,
 };

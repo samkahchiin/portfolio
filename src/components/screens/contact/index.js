@@ -5,11 +5,7 @@ import Button from '../../common/button/button';
 import RedesSociais, { ContatoModal } from './style';
 import FormEmail from '../../forms/formEmail';
 import Modal from '../../common/modal/modal';
-
-// TODO: Move this to constant
-const LINKEDIN_PROFILE = 'https://www.linkedin.com/in/kahchiin-sam/';
-const GITHUB_PROFILE = 'https://github.com/samkahchiin';
-const CODEPEN_PROFILE = 'https://codepen.io/earthworm48';
+import { contactSection, seo } from '../../../data/websiteData';
 
 function Contato() {
   const [isModalOpen, setModalState] = React.useState(false);
@@ -45,19 +41,19 @@ function Contato() {
       </Modal>
       <ContatoModal>
         <Button
-          title="Chat with me"
+          title={contactSection.title}
           ghost
           onClick={() => {
-            setModalState(!isModalOpen); // novo state sendo atribuido
+            setModalState(!isModalOpen);
           }}
         >
           <Text tag="p" id="contato" variant="titleXS" color="fonts.main">
-            Chat with me?
+            {contactSection.title}
           </Text>
         </Button>
       </ContatoModal>
       <Box>
-        <img src="/images/happy-me.png" alt="Sam Kah Chiin" />
+        <img src={contactSection.imageLink} alt={seo.siteOwner} />
       </Box>
       <Box
         display="flex"
@@ -71,7 +67,7 @@ function Contato() {
         <RedesSociais>
           <Text
             tag="a"
-            href={LINKEDIN_PROFILE}
+            href={contactSection.linkedinUrl}
             variant="paragraph1XS"
             target="_blank"
             rel="noopener noreferrer"
@@ -82,7 +78,7 @@ function Contato() {
           </Text>
           <Text
             tag="a"
-            href={GITHUB_PROFILE}
+            href={contactSection.githubUrl}
             variant="paragraph1XS"
             target="_blank"
             rel="noopener noreferrer"
@@ -93,7 +89,7 @@ function Contato() {
           </Text>
           <Text
             tag="a"
-            href={CODEPEN_PROFILE}
+            href={contactSection.codepenUrl}
             variant="paragraph1XS"
             target="_blank"
             rel="noopener noreferrer"
