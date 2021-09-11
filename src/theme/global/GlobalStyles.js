@@ -22,6 +22,11 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
   }
 
+  section {
+    height: 100vh;
+    max-width: 100vw;
+  }
+
   ul {
     list-style: none;
     margin: 0;
@@ -41,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
   p {
     margin: 0;
   }
-  
+
   #__next {
     flex: 1;
     display: flex;

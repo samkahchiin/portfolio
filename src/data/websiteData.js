@@ -109,10 +109,43 @@ https://fontawesome.com/icons?d=gallery */
   },
 };
 
+const achievementSection = {
+  title: 'Achievement & Certifications 🏆 ',
+  subtitle:
+    'Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !',
+  cards: [
+    {
+      title: 'AWS Certified Solutions Architect Associate',
+      subtitle:
+      'Validates the ability to design and implement distributed systems on AWS',
+      imageLink: '/images/aws-logo.webp',
+      footer: [
+        {
+          name: 'Certification',
+          url: 'https://www.credly.com/badges/3d92da2b-d013-419d-92b5-89595689ca91/public_url',
+        },
+      ],
+    },
+    {
+      title: 'HashiCorp Certified: Terraform Associate',
+      subtitle:
+        'Understand the basic concepts and skills associated with open source HashiCorp Terraform',
+      imageLink: '/images/terraform-associate.webp',
+      footer: [
+        {
+          name: 'Certification',
+          url: 'https://www.credly.com/badges/894f18fb-6e9f-4d41-9da0-6f12db775600/public_url',
+        },
+      ],
+    },
+  ],
+};
+
 export {
   GITHUB_USERNAME,
   REPOSITORY_IDS,
   PRINCIPAL_REPOSITORY_ID,
   skillsSection,
+  achievementSection,
   seo,
 };
