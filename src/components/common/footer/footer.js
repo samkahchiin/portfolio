@@ -13,9 +13,12 @@ function Footer() {
         md: 'space-between',
       }}
       alignItems="center"
-      position="sticky"
-      bottom="0"
+      position="fixed"
       height="8vh"
+      zIndex="100"
+      bottom="0"
+      left="1rem"
+      right="1rem"
       backgroundColor="#EFEFEF"
     >
       <Text zIndex="18" rel="noopener noreferrer" tag="a" variant="paragraph3" color="fonts.main" textAlign="center">

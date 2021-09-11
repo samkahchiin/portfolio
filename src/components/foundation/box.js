@@ -12,12 +12,15 @@ const Box = styled.div`
   ${propToStyle('height')}
   ${propToStyle('placeItems')}
   ${propToStyle('minHeight')}
+  ${propToStyle('minWidth')}
   ${propToStyle('width')}
   ${propToStyle('maxWidth')}
   ${propToStyle('zIndex')}
   ${propToStyle('position')}
   ${propToStyle('top')}
   ${propToStyle('bottom')}
+  ${propToStyle('left')}
+  ${propToStyle('right')}
   ${propToStyle('boxShadow')}
   ${propToStyle('alignItems')}
   ${propToStyle('textAlign')}

@@ -24,7 +24,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    min-height: 100vh; max-width: 100vw;
+    // 100vh - 8vh (footer) - 10vh (menu padding)
+    min-height: 82vh;
+    max-width: 100vw;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: solid 1px;

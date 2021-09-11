@@ -11,96 +11,98 @@ function Contato() {
   const [isModalOpen, setModalState] = React.useState(false);
 
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      justifyContent={{
-        xs: 'space-around',
-        md: 'space-around',
-      }}
-      height="70vh"
-      padding={{
-        xs: '0px',
-        md: '40px',
-      }}
-      marginTop={{
-        xs: '50px',
-        md: '100px',
-      }}
-      textAlign="center"
-    >
-      <Modal
-        isOpen={isModalOpen}
-        onClose={() => {
-          setModalState(false);
-        }}
-      >
-        {(propsDoModal) => (
-          <FormEmail propsDoModal={propsDoModal} setModalState={setModalState} />
-        )}
-      </Modal>
-      <ContatoModal>
-        <Button
-          title={contactSection.title}
-          ghost
-          onClick={() => {
-            setModalState(!isModalOpen);
-          }}
-        >
-          <Text tag="p" id="contato" variant="titleXS" color="fonts.main">
-            {contactSection.title}
-          </Text>
-        </Button>
-      </ContatoModal>
-      <Box>
-        <img src={contactSection.imageLink} alt={seo.siteOwner} />
-      </Box>
+    <section>
       <Box
         display="flex"
         flexDirection="column"
         justifyContent={{
-          xs: 'justify',
-          md: 'space-between',
+          xs: 'space-around',
+          md: 'space-around',
         }}
+        height="70vh"
+        padding={{
+          xs: '0px',
+          md: '40px',
+        }}
+        marginTop={{
+          xs: '50px',
+          md: '100px',
+        }}
+        textAlign="center"
       >
-        <Text tag="p" variant="paragraph3">Social Profiles</Text>
-        <RedesSociais>
-          <Text
-            tag="a"
-            href={contactSection.linkedinUrl}
-            variant="paragraph1XS"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Likedin"
-            color="fonts.main"
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => {
+            setModalState(false);
+          }}
+        >
+          {(propsDoModal) => (
+            <FormEmail propsDoModal={propsDoModal} setModalState={setModalState} />
+          )}
+        </Modal>
+        <ContatoModal>
+          <Button
+            title={contactSection.title}
+            ghost
+            onClick={() => {
+              setModalState(!isModalOpen);
+            }}
           >
-            Linkedin
-          </Text>
-          <Text
-            tag="a"
-            href={contactSection.githubUrl}
-            variant="paragraph1XS"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Github"
-            color="fonts.main"
-          >
-            Github
-          </Text>
-          <Text
-            tag="a"
-            href={contactSection.codepenUrl}
-            variant="paragraph1XS"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Codepen"
-            color="fonts.main"
-          >
-            Codepen
-          </Text>
-        </RedesSociais>
+            <Text tag="p" id="contato" variant="titleXS" color="fonts.main">
+              {contactSection.title}
+            </Text>
+          </Button>
+        </ContatoModal>
+        <Box>
+          <img src={contactSection.imageLink} alt={seo.siteOwner} />
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent={{
+            xs: 'justify',
+            md: 'space-between',
+          }}
+        >
+          <Text tag="p" variant="paragraph3">Social Profiles</Text>
+          <RedesSociais>
+            <Text
+              tag="a"
+              href={contactSection.linkedinUrl}
+              variant="paragraph1XS"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Likedin"
+              color="fonts.main"
+            >
+              Linkedin
+            </Text>
+            <Text
+              tag="a"
+              href={contactSection.githubUrl}
+              variant="paragraph1XS"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Github"
+              color="fonts.main"
+            >
+              Github
+            </Text>
+            <Text
+              tag="a"
+              href={contactSection.codepenUrl}
+              variant="paragraph1XS"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Codepen"
+              color="fonts.main"
+            >
+              Codepen
+            </Text>
+          </RedesSociais>
+        </Box>
       </Box>
-    </Box>
+    </section>
   );
 }
 
