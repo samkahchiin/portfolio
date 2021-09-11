@@ -8,9 +8,9 @@ function SEO({ headTitle }) {
   const title = hasHeadTitle
     ? (`${headTitle} | ${pageTitleDefault}`)
     : (pageTitleDefault);
-  // TODO: Move this
+  // TODO: Move all data together
   const url = 'https://samkahchiin.vercel.app/';
-  const image = 'https://postimg.cc/7G39Vdw7';
+  const image = 'https://i.postimg.cc/WzNdbxJk/portfolio-index.png';
   const description = 'Sam Kah Chiin Portfolio';
 
   return (
