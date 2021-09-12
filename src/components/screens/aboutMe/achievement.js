@@ -9,6 +9,7 @@ import {
   CardTitle, CardTag, Subtitle,
 } from './style/achievement';
 import 'flickity/css/flickity.css';
+import Box from '../../foundation/box';
 
 const Achievement = () => {
   const themeContext = useContext(ThemeContext);
@@ -24,7 +25,7 @@ const Achievement = () => {
         {achievementSection.subtitle}
       </Subtitle>
 
-      <Flickity options={{ initialIndex: 1, wrapAround: false }}>
+      <Flickity options={{ initialIndex: 1, wrapAround: false, draggable: true }}>
         {achievementSection.cards.map((card) => (
           <Card key={card.title}>
             <CardImageDiv>

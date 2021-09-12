@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import breakpointsMedia from '../../../../theme/util/breakpoints';
 
 export const Subtitle = styled.div`
   margin-top: 0.5rem;
@@ -18,12 +19,18 @@ export const Card = styled.div`
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 
-
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  width: 24rem;
+  width: 100%;
+  height: 40rem;
   margin-right: 1rem;
+  overflow-y: auto;
+
+  ${breakpointsMedia({
+    md: css`
+      width: 24rem;
+    `,
+  })}
 `;
 
 export const CardImageDiv = styled.div`
