@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '../../foundation/box';
 import Text from '../../foundation/text';
 import Button from '../../common/button/button';
-import RedesSociais, { ContatoModal } from './style';
+import ContatoModal from './style';
 import FormEmail from '../../forms/formEmail';
 import Modal from '../../common/modal/modal';
 import { contactSection, seo } from '../../../data/websiteData';
@@ -51,16 +51,19 @@ function Contato() {
         <Box>
           <img src={contactSection.imageLink} alt={seo.siteOwner} />
         </Box>
+
+        <Text tag="p" variant="subTitleXS">Social Profiles</Text>
         <Box
+          flexDirection={{
+            xs: 'column',
+            md: 'row',
+          }}
           display="flex"
-          flexDirection="column"
           justifyContent={{
-            xs: 'justify',
-            md: 'space-between',
+            md: 'space-around',
           }}
         >
-          <Text tag="p" variant="paragraph3">Social Profiles</Text>
-          <RedesSociais>
+          <Box>
             <Text
               tag="a"
               href={contactSection.linkedinUrl}
@@ -72,6 +75,8 @@ function Contato() {
             >
               Linkedin
             </Text>
+          </Box>
+          <Box>
             <Text
               tag="a"
               href={contactSection.githubUrl}
@@ -83,6 +88,8 @@ function Contato() {
             >
               Github
             </Text>
+          </Box>
+          <Box>
             <Text
               tag="a"
               href={contactSection.codepenUrl}
@@ -94,7 +101,7 @@ function Contato() {
             >
               Codepen
             </Text>
-          </RedesSociais>
+          </Box>
         </Box>
       </Box>
     </section>
