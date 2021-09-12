@@ -49,7 +49,7 @@ function Contato() {
           </Button>
         </ContatoModal>
         <Box>
-          <img src={contactSection.imageLink} alt={seo.siteOwner} />
+          <img src={contactSection.imageLink} alt={seo.siteOwner} style={{ maxWidth: '100%' }} />
         </Box>
 
         <Text tag="p" variant="subTitleXS">Social Profiles</Text>
