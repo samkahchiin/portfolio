@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   section {
     // 100vh - 8vh (footer) - 10vh (menu padding)
     min-height: 82vh;
-    max-width: 100vw;
+    width: 100%;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: solid 1px;

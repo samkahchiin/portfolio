@@ -66,12 +66,8 @@ function AboutMe() {
             </Box>
           </Info>
           <Image>
-            <figure>
-              <img src={skillsSection.profileImageLink} alt={seo.siteOwner} />
-              <figcaption style={{ textAlign: 'center', fontWeight: '100' }}>
-                <i>Me: Pray for no bug</i>
-              </figcaption>
-            </figure>
+            <img src={skillsSection.profileImageLink} alt={seo.siteOwner} />
+            <p style={{ textAlign: 'center', fontWeight: 100 }}><i>Me: Pray for no bug</i></p>
             <Box style={{ textAlign: 'center', marginTop: '1.5rem' }}>
               <Button target="_blank" href={skillsSection.resumeLink}>Download My Resume</Button>
             </Box>

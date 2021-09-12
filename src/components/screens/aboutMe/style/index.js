@@ -76,7 +76,6 @@ const Canais = styled.ul`
 
 export const Image = styled.div`
   order: 1;
-  margin: 0 auto;
 
   ${breakpointsMedia({
     md: css`
