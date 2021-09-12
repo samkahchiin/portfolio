@@ -6,7 +6,7 @@ export const Info = styled.div`
   padding-right: 0;
 
   ${breakpointsMedia({
-    md: css`
+    lg: css`
       order: 1;
       padding-right: 30px;
     `,
@@ -25,7 +25,7 @@ export const Descricao = styled.div`
     margin: 0 auto;
 
     ${breakpointsMedia({
-    md: css`
+    lg: css`
       gap: 25px;
       margin: 0 auto;
     `,
@@ -78,7 +78,7 @@ export const Image = styled.div`
   order: 1;
 
   ${breakpointsMedia({
-    md: css`
+    lg: css`
       order: 2;
     `,
   })}
@@ -90,10 +90,9 @@ export const Image = styled.div`
     border: solid 0.3rem #c1cbd8;
 
     ${breakpointsMedia({
-    md: css`
+    lg: css`
       width: 350px;
       height: 350px;
-      border-radius: 50%;
     `,
   })}
   }

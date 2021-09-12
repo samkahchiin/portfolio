@@ -28,7 +28,7 @@ function AboutMe() {
           display="flex"
           flexDirection={{
             xs: 'column',
-            md: 'row',
+            lg: 'row',
           }}
           justifyContent="space-between"
           alignItems="center"
