@@ -9,7 +9,6 @@ import {
   CardTitle, CardTag, Subtitle,
 } from './style/achievement';
 import 'flickity/css/flickity.css';
-import Box from '../../foundation/box';
 
 const Achievement = () => {
   const themeContext = useContext(ThemeContext);

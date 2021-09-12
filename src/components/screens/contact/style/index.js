@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContatoModal = styled.div`
+const ContatoModal = styled.div`
     position: relative;
 
     #contato:hover {
