@@ -22,7 +22,7 @@
 
 1. Clone repository
 ```
-git clone <url> && cd portfolio
+git clone git@github.com:samkahchiin/portfolio.git && cd portfolio
 ```
 
 2. Install dependencies
