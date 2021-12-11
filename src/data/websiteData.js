@@ -1,9 +1,9 @@
 /* eslint-disable import/prefer-default-export */
-const GITHUB_USERNAME = 'samkahchiin';
-const REPOSITORY_IDS = [254988213, 328071690];
-const PRINCIPAL_REPOSITORY_ID = [405060156];
+const GITHUB_USERNAME = 'samkahchiin'
+const REPOSITORY_IDS = [254988213, 328071690]
+const PRINCIPAL_REPOSITORY_ID = [405060156]
 
-const START_YEAR = 2016;
+const START_YEAR = 2016
 
 const landingPage = {
   description: `
@@ -14,7 +14,7 @@ const landingPage = {
     libraries and frameworks.
   `,
   imageLink: '/images/me-with-mac.webp',
-};
+}
 
 const seo = {
   siteOwner: 'Sam Kah Chiin',
@@ -22,18 +22,21 @@ const seo = {
   portfolioScreenshot: 'https://i.postimg.cc/WzNdbxJk/portfolio-index.png',
   portfolioUrl: 'https://samkahchiin.vercel.app',
   description: 'Sam Kah Chiin Portfolio',
-};
+}
 
 const skillsSection = {
   title: 'About Me',
-  subTitle: 'Former Chemical Engineering Student who founds passion in Software Development.',
+  subTitle:
+    'Former Chemical Engineering Student who founds passion in Software Development.',
   skills: [
     '⚡ Develop highly interactive Front end / User Interfaces for your web applications',
     '⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks',
-    '⚡ AWS and Terraform Certified'],
+    '⚡ AWS and Terraform Certified',
+  ],
 
   profileImageLink: '/images/profile.webp',
-  resumeLink: 'https://docs.google.com/document/d/1PgyewigyTl4gYADQUGhlv2mtmMuE9pc7Xpm4akzowmE/edit?usp=sharing',
+  resumeLink:
+    'https://docs.google.com/document/d/1PgyewigyTl4gYADQUGhlv2mtmMuE9pc7Xpm4akzowmE/edit?usp=sharing',
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -76,7 +79,8 @@ https://fontawesome.com/icons?d=gallery */
     backend: [
       {
         skillName: 'ruby',
-        imageLink: 'https://img.icons8.com/color/48/000000/ruby-programming-language.png',
+        imageLink:
+          'https://img.icons8.com/color/48/000000/ruby-programming-language.png',
       },
       {
         skillName: 'Ruby On Rails',
@@ -125,7 +129,7 @@ https://fontawesome.com/icons?d=gallery */
       },
     ],
   },
-};
+}
 
 const achievementSection = {
   title: 'Achievement & Certifications 🏆 ',
@@ -134,8 +138,7 @@ const achievementSection = {
   cards: [
     {
       title: 'AWS Certified Solutions Architect Associate',
-      subtitle:
-      'Able to design and implement distributed systems on AWS',
+      subtitle: 'Able to design and implement distributed systems on AWS',
       imageLink: '/images/aws-logo.webp',
       footer: [
         {
@@ -153,6 +156,18 @@ const achievementSection = {
         {
           name: 'Certification',
           url: 'https://www.credly.com/badges/894f18fb-6e9f-4d41-9da0-6f12db775600/public_url',
+        },
+      ],
+    },
+    {
+      title: 'HashiCorp Certified: Vault Associate',
+      subtitle:
+        'Understand the basic concepts, skills, and use cases associated with open source HashiCorp Vault',
+      imageLink: '/images/vault-associate.webp',
+      footer: [
+        {
+          name: 'Certification',
+          url: 'https://www.credly.com/badges/9ea52149-10df-4c5a-876e-e969d5c3930c/public_url',
         },
       ],
     },
@@ -195,7 +210,8 @@ const achievementSection = {
       ],
     },
     {
-      title: 'Essentials of the Satir Growth Model for Personal Growth (Advance Level)',
+      title:
+        'Essentials of the Satir Growth Model for Personal Growth (Advance Level)',
       subtitle: `
         Satir Growth Model concepts course designed by Dr. Yung Tsang Sun May.
         Satir Growth Model is the model developed by Virginia Satir who is known as the
@@ -205,7 +221,7 @@ const achievementSection = {
       footer: [],
     },
   ],
-};
+}
 
 const contactSection = {
   title: "Let's Chat?",
@@ -213,7 +229,7 @@ const contactSection = {
   linkedinUrl: 'https://www.linkedin.com/in/kahchiin-sam/',
   githubUrl: 'https://github.com/samkahchiin',
   codepenUrl: 'https://codepen.io/earthworm48',
-};
+}
 
 export {
   GITHUB_USERNAME,
@@ -224,4 +240,4 @@ export {
   contactSection,
   seo,
   landingPage,
-};
+}
