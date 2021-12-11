@@ -163,7 +163,7 @@ const achievementSection = {
       title: 'HashiCorp Certified: Vault Associate',
       subtitle:
         'Understand the basic concepts, skills, and use cases associated with open source HashiCorp Vault',
-      imageLink: '/images/vault-associate.webp',
+      imageLink: '/images/vault-associate.jpeg',
       footer: [
         {
           name: 'Certification',
